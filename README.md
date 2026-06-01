@@ -42,29 +42,6 @@
 
 Documentación complementaria: `fase1/criterios_evaluacion.md`, `fase1/checklist_consistencia_hidrologica.md`.
 
-### Fase 2 — Aplicación (con resultados recibidos)
-
-**Comando:** `python run_pipeline.py --fase 2`
-
-**Entradas mínimas:** CSV del notebook en `resultados_frecuencias/`.  
-**Entrada opcional:** CSV unificado del equipo del paso 4.
-
-**Entregables** (`salidas/fase2/`):
-
-| Archivo | Contenido |
-|---------|-----------|
-| `01_metricas_ampliadas_notebook.csv` | Métricas del notebook + MAE, sesgo, AD, ?² |
-| `02_ranking_modelos.csv` | Ranking por AIC, KS, RMSE, AD y score compuesto |
-| `03_conflictos_entre_metricas.csv` | Discrepancias AIC vs KS vs RMSE por río |
-| `04_tabla_comparativa_completa.csv` | Métricas + cuantiles Q_T |
-| `05_checklist_resultados.csv` | Monotonía, extrapolación, aptitud hidrológica |
-| `06_tabla_reporte_seccion6.csv` | Tabla tipo artículo: Distribución \| KS \| AD \| AIC \| RMSE \| Ranking |
-| `07_mejor_modelo_por_rio_AIC.csv` | Mejor modelo por tributario |
-| `08_resultados_paso4_integrados.csv` | Solo si existe CSV del paso 4 |
-| `09_validacion_cruzada_notebook.csv` | Comparación con `07_tabla_final_mejor_aic.csv` |
-| `graficas/{rio}/` | QQ plot, CDF empírica vs teórica, curva de periodos de retorno |
-| `manifest_fase2.json` | Metadatos de ejecución |
-
 **Hallazgo preliminar (ejecución sobre datos actuales):** para la mayoría de los ríos el **GEV (MLE)** domina en AIC y KS; en **San Diego** el notebook selecciona **Exponencial 2P** (mejor AIC con KS y RMSE aceptables). Conviene discutir en la sección 6 si el criterio hidrológico refuerza o modifica esa elección.
 
 ---
