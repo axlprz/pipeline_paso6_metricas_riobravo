@@ -6,22 +6,6 @@
 
 ---
 
-## Contexto del artículo (10 pasos)
-
-| Paso | Contenido | Responsables | Relación con este pipeline |
-|------|-----------|--------------|----------------------------|
-| 1 | Introducción / deuda hídrica y extremos | Fernando, Alfonso | Marco (`Introduccion…pdf`, `propuesta.PNG`) |
-| 2 | Base de datos y control de calidad | Fernando | `02_validacion.csv` |
-| 3 | Series para frecuencias (anuales, estacionales, excedencias) | Cecilia Téllez, Carlos Franco | `01_maximos_anuales.csv` (anuales listos) |
-| 4 | Distribuciones a comparar (13 modelos) | Ana Rosa, Kay, Cecy, Carlos | `Distribuciones/Probabilística.pdf` + CSV opcional en `entrada/` |
-| 5 | Estimación de parámetros | Luis Fernando | Notebook + `04_parametros_estimados.csv` |
-| **6** | **Métricas, errores y consistencia hidrológica** | **Axel** | **Este pipeline (2 fases)** |
-| 7 | Periodos de retorno y sensibilidad | Diego Pallares, Braulio | `06_periodos_retorno.csv` |
-| 8 | Incertidumbre | Kay García | Futura extensión del pipeline |
-| 9–10 | Discusión y conclusiones | Varios | Redacción con salidas de fase 2 |
-
----
-
 ## Fuentes integradas (pasos 1–5)
 
 1. **Notebook** `notebook_completo_analisis_frecuencias_hidrologicas.ipynb`  
