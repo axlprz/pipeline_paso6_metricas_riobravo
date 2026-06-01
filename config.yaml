@@ -1,0 +1,66 @@
+# Rutas relativas al directorio raíz del proyecto "Proyecto Final"
+proyecto_raiz: ".."
+
+fuentes:
+  notebook_resultados: "../Estimación de parámetros/entregas-Riobravo-main/resultados_frecuencias"
+  notebook_ipynb: "../Estimación de parámetros/entregas-Riobravo-main/notebook_completo_analisis_frecuencias_hidrologicas.ipynb"
+  distribuciones_pdf: "../Distribuciones/Probabilística.pdf"
+  metricas_docx: "../Métricas de ajuste, errores y consistencia hidrológica.docx"
+
+# Paso 4 (equipo Distribuciones): CSV opcional con columnas estándar (ver plantillas/)
+entrada_distribuciones_equipo: "entrada/fase2_resultados_distribuciones.csv"
+
+salidas:
+  fase1: "salidas/fase1"
+  fase2: "salidas/fase2"
+
+series:
+  tipo_actual: "maximos_anuales"
+  tipos_planificados:
+    - maximos_anuales
+    - maximos_estacionales
+    - excedencias
+
+rios:
+  - "6 Tributarios"
+  - Conchos
+  - Vacas
+  - "San Diego"
+  - "San Rodrigo"
+  - Escondido
+  - Salado
+
+# Distribuciones del notebook (paso 5 — Luis Fernando)
+distribuciones_notebook:
+  - Gumbel_Momentos
+  - Gumbel_MLE
+  - Exponencial_1P
+  - Exponencial_2P
+  - GEV_MLE
+
+# Distribuciones del documento Probabilística.pdf (paso 4)
+distribuciones_documento:
+  - Gamma
+  - Gumbel
+  - Pareto
+  - Burr_XII
+  - GEV
+  - Kappa
+  - LogNormal
+  - LogPearson
+  - Poisson_Exponencial
+  - TCEV
+  - Wakeby
+  - Weibull
+  - Normal
+
+periodos_retorno: [2, 5, 10, 25, 50, 100]
+
+criterios:
+  alpha_ks: 0.05
+  ratio_q100_vs_max_historico_alerta: 5.0
+  pesos_ranking:
+    AIC: 0.35
+    KS_stat: 0.25
+    RMSE_prob: 0.25
+    AD_stat: 0.15
