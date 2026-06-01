@@ -56,15 +56,3 @@ python run_pipeline.py --fase all
 
 Configuración de rutas, rios, pesos del ranking y umbrales: `config.yaml`.
 
----
-
-## Próximos pasos sugeridos
-
-1. Exportar resultados MATLAB del paso 4 al formato `entrada/fase2_resultados_distribuciones.csv`.
-2. Incorporar **máximos estacionales** y **excedencias** cuando Cecilia/Carlos entreguen las series.
-3. Conectar con paso 7 (sensibilidad de Q_T) y paso 8 (intervalos de confianza).
-4. Redactar la sección 6 del artículo usando `06_tabla_reporte_seccion6.csv` y el análisis de conflictos.
-
----
-
-*Generado como marco reproducible para el paso 6 — métricas de ajuste, errores y consistencia hidrológica (pruebas de bondad de ajuste).*
