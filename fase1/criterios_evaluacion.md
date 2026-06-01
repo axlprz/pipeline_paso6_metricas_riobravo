@@ -1,26 +1,26 @@
-# Criterios de evaluaciÛn y selecciÛn de modelos (Fase 1)
+# Criterios de evaluaci√≥n y selecci√≥n de modelos (Fase 1)
 
 ## Objetivo del paso 6
 
-Evaluar quÈ distribuciones representan mejor los **m·ximos anuales** (y, en fases posteriores, m·ximos estacionales y excedencias) de las entregas histÛricas del RÌo Bravo, combinando criterios **estadÌsticos**, **hidrolÛgicos** y **operativos**.
+Evaluar qu√© distribuciones representan mejor los **m√°ximos anuales** (y, en fases posteriores, m√°ximos estacionales y excedencias) de las entregas hist√≥ricas del R√≠o Bravo, combinando criterios **estad√≠sticos**, **hidrol√≥gicos** y **operativos**.
 
-## DefiniciÛn de ìbuen ajusteî
+## Definici√≥n de ‚Äúbuen ajuste‚Äù
 
-| DimensiÛn | Criterio |
+| Dimensi√≥n | Criterio |
 |-----------|----------|
-| EstadÌstico | Bajos AIC/BIC, RMSE en probabilidades, pruebas KS/AD/?≤ no significativas |
-| HidrolÛgico | Colas razonables, Q_T crecientes, Q_100 no desconectado del m·ximo observado |
-| Operativo | Estabilidad paramÈtrica y utilidad para planificaciÛn binacional (enlace con pasos 7ñ9) |
+| Estad√≠stico | Bajos AIC/BIC, RMSE en probabilidades, pruebas KS/AD/?¬≤ no significativas |
+| Hidrol√≥gico | Colas razonables, Q_T crecientes, Q_100 no desconectado del m√°ximo observado |
+| Operativo | Estabilidad param√©trica y utilidad para planificaci√≥n binacional (enlace con pasos 7‚Äì9) |
 
 ## Ranking
 
 1. **AIC** (criterio principal del notebook de Luis Fernando).
 2. **KS** y **RMSE_prob** (ajuste global y en cola).
 3. **Score compuesto** (pesos en `config.yaml`) para desempate.
-4. **Checklist hidrolÛgico** como filtro final, no como ˙nico criterio.
+4. **Checklist hidrol√≥gico** como filtro final, no como √∫nico criterio.
 
-## IntegraciÛn con pasos 4 y 7
+## Integraci√≥n con pasos 4 y 7
 
-- **Paso 4** (`Distribuciones/ProbabilÌstica.pdf`): 13 distribuciones ajustadas en MATLAB.
-- **Paso 5** (notebook): 5 distribuciones con salidas CSV en `resultados_frecuencias/`.
+- **Paso 4** : 13 distribuciones ajustadas en MATLAB.
+- **Paso 5** : 5 distribuciones con salidas CSV en `resultados_frecuencias/`.
 - **Paso 7**: usar `06_periodos_retorno.csv` y salidas `07_*` para sensibilidad por modelo.
