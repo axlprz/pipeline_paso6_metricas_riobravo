@@ -8,14 +8,14 @@
 
 ## Fuentes integradas (pasos 1–5)
 
-1. **Notebook** `notebook_completo_analisis_frecuencias_hidrologicas.ipynb`  
+1. **Notebook del paso 5** `notebook_completo_analisis_frecuencias_hidrologicas.ipynb`  
    - 7 ríos/tributarios, periodo 1950–2025, n = 76.  
    - Distribuciones: Gumbel (momentos y MLE), Exponencial 1P/2P, GEV (MLE).  
    - Salidas en `resultados_frecuencias/01`–`07`.
 
-2. **Documento paso 4** `Distribuciones/Probabilística.pdf`  
+2. **Resultados paso 4** 
    - Gamma, Gumbel, Pareto, Burr XII, GEV, Kappa, LogNormal, Log-Pearson, Poisson-Exponencial, TCEV, Wakeby, Weibull, Normal.  
-   - Se integran en fase 2 mediante `entrada/fase2_resultados_distribuciones.csv` (plantilla en `.example`).
+   - Se integran en fase 2.
 
 3. **Especificación bifásica** `Métricas de ajuste, errores y consistencia hidrológica.docx`  
    - Fase 1: framework antes de recibir todos los resultados.  
