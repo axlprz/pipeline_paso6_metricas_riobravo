@@ -1,4 +1,4 @@
-# Resumen del pipeline — Paso 6
+# Resumen del pipeline actual — Paso 6
 
 **Proyecto:** Análisis de frecuencias de las entregas históricas del Río Bravo: comparación de distribuciones probabilísticas para extremos hidrológicos en una cuenca transfronteriza.
 
